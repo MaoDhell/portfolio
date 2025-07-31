@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "home": {
+    "title": "你好,我是/nLaura",
+    "subtitle": "我像设计世界一样开发软件。",
+    "subtitle2": "我能描绘别人难以想象的事物。"
+  },
+  "about": {
+    "title": "关于我",
+    "desc1": "我是一名软件开发者；我喜欢从构建一切的逻辑到与人连接的界面。我喜欢一切都契合的感觉——就像一个设计精良、机制隐形的游戏。我将逻辑与美学融合，从头到尾开发系统，统一结构、功能和视觉体验。",
+    "desc2": "此外，我是狮子座，充满好奇、表现力强，也有点固执（恰到好处）。我靠冰咖啡、像素艺术和每次提交都会变的歌单生活。如果我不在编程或画画，那我大概在玩游戏、上课或思考。"
+  },
+  "aboutStats": {
+    "name": "Laura D. Escobar Ruiz",
+    "nickname": "(猫D)", 
+    "avatarAlt": "劳拉的肖像", 
+    "typeLabel": "类型", 
+    "type": "奥法人形", 
+    "roleLabel": "角色", 
+    "role": "代码术士",  
+    "mainClassLabel": "主职业",  
+    "mainClass": "软件召唤师",  
+    "subClassLabel": "副职业",  
+    "subClass": "视觉召唤师",  
+    "quoteLabel": "描述",
+    "quote": "像拼图一样编写软件。/n每一块都必须契合，每一个细节都很重要",  
+    "statsTitle": "属性",  
+    "stats": {
+      "logic": { "label": "逻辑", "value": 4 },  
+      "creativity": { "label": "创造力", "value": 4 },  
+      "adaptability": { "label": "适应力", "value": 4 },  
+      "socialEnergy": { "label": "社交能量", "value": 2 },  
+      "visualPrecision": { "label": "视觉精度", "value": 4 } 
+    },
+    "siriusTitle": "Sirius Black", 
+    "siriusAbout": {
+      "siriusAlt": "宠物Sirius",  
+      "siriusTypeLabel": "类型",  
+      "siriusType": "奥法猫科",  
+      "siriusRoleLabel": "模式：潜行、疾跑与混乱",  
+      "siriusStats": {
+        "curiosity": { "label": "好奇心", "value": 5 },  
+        "speed": { "label": "速度", "value": 4 },  
+        "screams": { "label": "尖叫", "value": 5 },  
+        "cuddles": { "label": "撒娇", "value": 3 }  
+      }
+    },
+    "hobbiesTitle": "爱好",  
+    "hobbies": [
+      "玩电子游戏",  
+      "分析游戏机制",  
+      "听音乐",  
+      "绘制角色", 
+      "看剧集",  
+      "探索数字工具",  
+      "为兴趣而学习"  
+    ]
+  },
+"portfolios": {
+    "title": "作品集",
+    "softTitle": "软件开发项目",
+    "visualTitle": "视觉设计项目",
+    "softDesc": "软件开发与功能原型设计。涵盖网页应用、移动端程序，以及交互系统和电子游戏的后端逻辑开发。",
+    "visualDesc": "视觉设计与数字艺术。包括角色设计、场景设计、概念艺术及数字资产制作。",
+    "buttonSoft": "查看代码作品",
+    "buttonVisual": "查看视觉作品"
+},
+"contact": {
+    "title": "联系我们！",
+    "subtitle": "想合作？/n 创造惊艳的作品？ /n 或者只是打个招呼？/n 我随时欢迎新项目、/n 团队合作和挑战。",
+    "form": {
+      "nameLabel": "您的姓名",
+      "emailLabel": "您的电子邮箱",
+      "messageLabel": "您的留言...",
+      "submitButton": "发送"
+    },
+    "successMessage": "感谢您的留言，我会尽快回复您。",
+    "errorMessage": "出错啦！请稍后再试。"
+  },
+  "reserved":"版权所有",
+  "footer": "准备好开始下一次冒险了吗？",
+
+  "softDev": {
+    "title": "软件开发",
+    "subtitle": "软件开发和功能原型设计。/n 涵盖网页、/n 应用程序以及交互系统和游戏的逻辑开发。"
+},
+"filters": {
+  "title": "项目",
+  "techLabel": "技术",
+  "typeLabel": "项目类型"
+},
+"projectsType": {
+    "all": "全部",
+    "webApps": "网络应用",
+    "games": "视频游戏",
+    "3dDesign": "3D设计",
+    "uiInterfaces": "用户界面",
+    "digitalProducts": "数字产品",
+    "academic": "学术项目",
+    "freelance": "自由职业/客户",
+    "openSource": "个人项目"
+  }
+}

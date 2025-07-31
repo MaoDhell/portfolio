@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hi, I'm/nLaura",
+    "subtitle": "I develop software like someone/nwho designs worlds.",
+    "subtitle2": "I illustrate what others can/nbarely imagine."
+  },
+  "about": {
+    "title": "About me",
+    "desc1": "I'm a software developer; I enjoy building from the logic that holds everything together to the interfaces that connect with people. I like it when everything fits like a well-designed game with invisible mechanics. I blend logic and aesthetics to develop systems from start to finish, uniting structure, functionality, and visual experience.",
+    "desc2": "Also, I'm a Leo, curious, expressive, and a bit stubborn (just the right amount). I run on iced coffee, pixel art, and playlists that change with every commit. If I’m not coding or sketching, I’m probably mid-game, mid-course, or mid-thought."
+  },
+  "aboutStats": {
+    "name": "Laura D. Escobar Ruiz",
+    "nickname": "(猫D)", 
+    "avatarAlt": "Portrait of Laura",
+    "typeLabel": "Type",
+    "type": "Arcane Humanoid", 
+    "roleLabel": "Role",
+    "role": "Code Enchantress",  
+    "mainClassLabel": "Main Class",
+    "mainClass": "Software Summoner",
+    "subClassLabel": "Subclass",
+    "subClass": "Visual Summoner",
+    "quoteLabel": "Description",
+    "quote": "I craft software like puzzles./nEvery piece fits, every detail matters",
+    "statsTitle": "Stats",
+    "stats": {
+      "logic": { "label": "Logic", "value": 4 },
+      "creativity": { "label": "Creativity", "value": 4 },
+      "adaptability": { "label": "Adaptability", "value": 4 },
+      "socialEnergy": { "label": "Social Energy", "value": 2 },
+      "visualPrecision": { "label": "Visual Precision", "value": 4 }
+    },
+    "siriusTitle": "Sirius Black",
+    "siriusAbout": {
+      "siriusAlt": "Pet Sirius",
+      "siriusTypeLabel": "Type",
+      "siriusType": "Arcane Feline",
+      "siriusRoleLabel": "Mode: Stealth, zoom, and chaos",
+      "siriusStats": {
+        "curiosity": { "label": "Curiosity", "value": 5 },
+        "speed": { "label": "Speed", "value": 4 },
+        "screams": { "label": "Screams", "value": 5 },
+        "cuddles": { "label": "Cuddles", "value": 3 }
+      }
+    },
+    "hobbiesTitle": "Hobbies",
+    "hobbies": [
+      "Playing video games",
+      "Analyzing game mechanics",
+      "Listening to music",
+      "Illustrating characters",
+      "Watching series",
+      "Exploring digital tools",
+      "Learning for fun" 
+    ]
+  },
+  "portfolios": {
+    "title": "Portfolios",
+    "softTitle": "Software Projects",
+    "visualTitle": "Visual Projects",
+    "softDesc": "Software development and functional prototyping. Web, mobile apps, and backend logic for interactive systems and video games.",
+    "visualDesc": "Visual design and illustration. From character design to digital art.Concept art, diseño de personajes, escenarios y assets.",
+    "buttonSoft": "Compile Portfolio",
+    "buttonVisual":"Render Portfolio"
+  },
+"contact": {
+    "title": "Let's Talk!",
+    "subtitle": "Want to collaborate? /n Create something awesome?/n Or just say hello? /n I'm open to new /n projects, teams, and /n challenges.",
+    "form": {
+      "nameLabel": "Your name",
+      "emailLabel": "Your email address",
+      "messageLabel": "Your message...",
+      "submitButton": "Send"
+    },
+    "successMessage": "Thank you for your message. I'll get back to you soon.",
+    "errorMessage": "Oops! Something went wrong. Please try again later."
+  },
+  "reserved":"All rights reserved",
+  "footer": "Ready for the next adventure?",
+
+  "softDev": {
+    "title": "Software /n Dev",
+    "subtitle": "Software development and /n functional prototypes. Web, /n Apps and logic for interactive /n systems and videogames."
+},
+"filters":{
+  "title": "Projects",
+  "techLabel": "Technology",
+  "typeLabel": "Type of projects"
+},
+"projectsType": {
+      "all": "All",
+      "webApps": "Web Applications",
+      "games": "Video Games",
+      "3dDesign": "3D Designs",
+      "uiInterfaces": "UI Interfaces",
+      "digitalProducts": "Digital Products",
+      "academic": "Academic Projects",
+      "freelance": "Freelance / Clients",
+      "openSource": "Personal"
+  }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.01 361.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: url(#linear-gradient);
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.33px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+        opacity: .19;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="72.1" y1="374.05" x2="295.66" y2="-13.17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d5182e"/>
+      <stop offset=".1" stop-color="#cc1f34"/>
+      <stop offset=".26" stop-color="#b53248"/>
+      <stop offset=".46" stop-color="#8f5267"/>
+      <stop offset=".69" stop-color="#5a7e92"/>
+      <stop offset=".94" stop-color="#17b6c9"/>
+      <stop offset="1" stop-color="#08c4d6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="72.46" y1="373.43" x2="295.31" y2="-12.55" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="66.02" y1="384.57" x2="301.74" y2="-23.69" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="index">
+    <g>
+      <path class="cls-1" d="M336.38,349.72H31.38c-7.54-7.54-11.77-11.77-19.31-19.31V30.47c7.54-7.54,11.77-11.77,19.31-19.31h305.01c7.54,7.54,11.77,11.77,19.31,19.31v299.93c-7.54,7.54-11.77,11.77-19.31,19.31Z"/>
+      <path class="cls-3" d="M336.38,349.72H31.38c-7.54-7.54-11.77-11.77-19.31-19.31V30.47c7.54-7.54,11.77-11.77,19.31-19.31h305.01c7.54,7.54,11.77,11.77,19.31,19.31v299.93c-7.54,7.54-11.77,11.77-19.31,19.31Z"/>
+      <path class="cls-2" d="M127.55,360.88H24.98L.75,336.64v-155.1l2,2.83v151.44l23.06,23.06h100.33l1.41,2ZM176.13,0H24.98L.75,24.23v60.43l2,2V25.06L25.81,2h148.32l2-2ZM223.63,0h-25l-2,2h25l2-2ZM268.88,0h-22.75l-2,2h22.75l2-2ZM342.78,0h-51.39l-2,2h52.57l23.06,23.06v310.75l-23.06,23.06h-66.98l2,2h65.81l24.23-24.23V24.23L342.78,0ZM2.12,164.07c-1.17,0-2.12.95-2.12,2.12s.95,2.12,2.12,2.12,2.12-.95,2.12-2.12-.95-2.12-2.12-2.12ZM2.12,150.32c-1.17,0-2.12.95-2.12,2.12s.95,2.12,2.12,2.12,2.12-.95,2.12-2.12-.95-2.12-2.12-2.12ZM2.12,139.57c-1.17,0-2.12.95-2.12,2.12s.95,2.12,2.12,2.12,2.12-.95,2.12-2.12-.95-2.12-2.12-2.12ZM233.69,359.82c0-1.17-.95-2.12-2.12-2.12s-2.12.95-2.12,2.12.95,2.12,2.12,2.12,2.12-.95,2.12-2.12ZM247.44,359.82c0-1.17-.95-2.12-2.12-2.12s-2.12.95-2.12,2.12.95,2.12,2.12,2.12,2.12-.95,2.12-2.12ZM258.19,359.82c0-1.17-.95-2.12-2.12-2.12s-2.12.95-2.12,2.12.95,2.12,2.12,2.12,2.12-.95,2.12-2.12Z"/>
+    </g>
+  </g>
+</svg>

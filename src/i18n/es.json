@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Portafolio",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Hola, soy/nLaura",
+    "subtitle": "Desarrollo software como/nquien diseña mundos.",
+    "subtitle2": "Ilustro lo que otros/napenas pueden imaginar."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "desc1": "Soy desarrolladora de software; disfruto construir desde la lógica que une todo hasta las interfaces que conectan con las personas. Me gusta cuando todo encaja, como un juego bien diseñado con mecánicas invisibles. Mezclo lógica y estética para desarrollar sistemas de principio a fin, uniendo estructura, funcionalidad y experiencia visual.",
+    "desc2": "Además, soy Leo, curiosa, expresiva y un poco terca (en la medida justa). Funciono con café frío, pixel art y playlists que cambian con cada commit. Si no estoy programando o dibujando, probablemente esté a mitad de un juego, curso o pensamiento."
+  },  
+  "aboutStats": {
+    "name": "Laura D. Escobar Ruiz",
+    "nickname": "(猫D)",
+    "avatarAlt": "Retrato de Laura",
+    "typeLabel": "Tipo",
+    "type": "Humanoids Arcano",
+    "roleLabel": "Rol",
+    "role": "Hechicera del Código",
+    "mainClassLabel": "Clase Principal",
+    "mainClass": "Invocadora de software",
+    "subClassLabel": "Clase Secundaria",
+    "subClass": "Invocadora Visual",
+    "quoteLabel": "Descripción",
+    "quote": "Arma software como si fueran puzzles./nCada pieza encaja, cada detalle importa",
+    "statsTitle": "Stats",
+    "stats": {
+      "logic": { "label": "Lógica", "value": 4 },
+      "creativity": { "label": "Creatividad", "value": 4 },
+      "adaptability": { "label": "Adaptabilidad", "value": 4 },
+      "socialEnergy": { "label": "Energía Social", "value": 2 },
+      "visualPrecision": { "label": "Precision visual", "value": 4 }
+    },
+    "siriusTitle": "Sirius Black",
+    "siriusAbout":{
+      "siriusAlt": "Mascota Sirius",
+      "siriusTypeLabel": "Tipo",
+      "siriusType":"Felino Arcano",
+      "siriusRoleLabel": "Modo: Sigilo, zoom y caos",
+      "siriusStats":{
+        "curiosity": { "label": "Curiosidad", "value": 5 },
+        "speed": { "label": "Velocidad", "value": 4 },
+        "screams": { "label": "Gritos", "value": 5 }, 
+        "cuddles": { "label": "Mimos", "value": 3 }
+      }
+    },
+    "hobbiesTitle": "Hobbies",
+    "hobbies": [
+      "Jugar videojuegos",
+      "Analizar mecánicas de juego",
+      "Escuchar música",
+      "Ilustrar personajes",
+      "Ver series",
+      "Explorar herramientas digitales",
+      "Aprender por deporte"
+    ]
+  },
+  "portfolios": {
+    "title": "Portafolios",
+    "softTitle": "Portafolio de Software",
+    "visualTitle": "Portafolio Desarrollo Visual",
+    "softDesc": "Desarrollo de software y prototipado funcional. Aplicaciones web, móviles y lógica backend para sistemas interactivos y videojuegos.",
+    "visualDesc": "Diseño visual e ilustración. Desde diseño de personajes hasta arte digital. Concept art, diseño de personajes, escenarios y assets.",
+    "buttonSoft": "Copilar Portafolio",
+    "buttonVisual": "Renderizar Portafolio"
+  },
+  "contact": {
+    "title": "¡Hablemos!",
+    "subtitle": "¿Colaborar? ¿Crear /n algo brutal? ¿Solo /n decir hola? /n Estoy abierta a /n nuevos proyectos, /n equipos y retos.",
+    "form": {
+      "nameLabel": "Tu nombre",
+      "emailLabel": "Tu correo electrónico",
+      "messageLabel": "Tu mensaje...",
+      "submitButton": "Enviar"
+    },
+    "successMessage": "Gracias por tu mensaje. Me pondré en contacto contigo pronto.",
+    "errorMessage": "Oops! Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+  },
+  "reserved":"Todos los derechos reservados",  
+  "footer":"¿Listx para la siguiente aventura?",
+
+  "softDev": {
+    "title": "Desarrollo /n de Software",
+    "subtitle": "Desarrollo de software y /n prototipos funcionales. Web, /naplicaciones y lógica para sistemas /n interactivos y videojuegos."
+},
+"filters":{
+  "title": "Proyectos",
+  "techLabel": "Tecnología",
+  "typeLabel": "Tipo de proyectos"
+  },
+  "projectsType": {
+    "all": "Todos",
+    "webApps": "Aplicaciones Web",
+    "games": "Videojuegos",
+    "3dDesign": "Diseños 3D",
+    "uiInterfaces": "Interfaces UI",
+    "digitalProducts": "Productos digitales",
+    "academic": "Proyectos de clase",
+    "freelance": "Freelance / Clientes",
+    "openSource": "Personales"
+  }
+}
+

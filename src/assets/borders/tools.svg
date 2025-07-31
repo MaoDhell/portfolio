@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1102 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: url(#linear-gradient);
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: .65px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+        filter: url(#outer-glow-1);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="695.37" y1="-175.16" x2="405.73" y2="326.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d5182e"/>
+      <stop offset=".1" stop-color="#cc1f34"/>
+      <stop offset=".26" stop-color="#b53248"/>
+      <stop offset=".46" stop-color="#8f5267"/>
+      <stop offset=".69" stop-color="#5a7e92"/>
+      <stop offset=".94" stop-color="#17b6c9"/>
+      <stop offset="1" stop-color="#08c4d6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.55" y1="79.55" x2="1087.55" y2="79.55" xlink:href="#linear-gradient"/>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="4.52"/>
+      <feFlood flood-color="#46d2e0" flood-opacity=".9"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_4" data-name="Layer 4">
+    <g>
+      <path class="cls-1" d="M1052.01,120.2H49.1c-4.37-4.37-6.82-6.82-11.19-11.19V42.33c4.37-4.37,6.82-6.82,11.19-11.19h1002.91c4.37,4.37,6.82,6.82,11.19,11.19v66.67c-4.37,4.37-6.82,6.82-11.19,11.19Z"/>
+      <path class="cls-2" d="M1084.55,84.04l3-2.45v12.54l-3,2.45v-12.54ZM44.74,142.55l-28.18-23.01V39.15l28.18-23.01h122.56l-3-2.45H43.49l-29.94,24.44v82.42l29.94,24.44h369.8l-3-2.45H44.74ZM1084.55,119.54l-28.18,23.01h-111.62l2.2,2.45h110.67l29.94-24.44v-13.09l-3,2.45v9.63ZM1057.61,13.69h-293.22l2.2,2.45h289.78l28.18,23.01v5.7l3-2.45v-4.27l-29.94-24.44ZM1084.55,70.72l3-2.45v-12.54l-3,2.45v12.54ZM678.99,14.49H251.24v.82h427.74v-.82ZM465.12,145.41h427.74v-.82h-427.74v.82Z"/>
+    </g>
+  </g>
+</svg>
