@@ -7,8 +7,11 @@ import Footer from './components/Footer';
 import VisualDev from './pages/VisualDev';
 
 function App() {
+
+   const basename = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
   return (
-    <Router basename="/portfolio">
+    <Router basename={basename}>
       <div className="App relative min-h-screen">
         <Navbar />
         <div>
