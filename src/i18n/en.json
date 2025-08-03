@@ -104,5 +104,12 @@
       "academic": "Academic Projects",
       "freelance": "Freelance / Clients",
       "openSource": "Personal"
+  },
+
+"more": "View More",
+"project1": {
+    "title": "Veterinary Management System",
+    "description": "Application to manage patient (pet) information, medical history, appointments, and more...",
+    "type": "Academic Projects"
   }
 }

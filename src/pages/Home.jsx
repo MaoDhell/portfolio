@@ -205,7 +205,7 @@ const Home = () => {
               }}
             />
             {/* Texto para Frame 1 */}
-              <div className="text-light text-left transform translate-y-[23%] translate-x-[-158%] justify-start">
+              <div className="text-light text-left transform translate-y-[23%] translate-x-[-138%] justify-start">
                 <h3 className='font-genos text-2xl mb-2'><span className="font-bold">{t('aboutStats.name')}</span> <span className="font-bold">{t('aboutStats.nickname')}</span></h3>
                 <p className='font-inter mb-1'><span className="font-bold">{t('aboutStats.typeLabel')}</span>: {t('aboutStats.type')}</p>
                 <p className='font-inter mb-1'><span className='font-bold'>{t('aboutStats.roleLabel')}</span>: {t('aboutStats.role')}</p>
@@ -405,7 +405,10 @@ const Home = () => {
                 </p>
               </div>
               <div className="mt-auto mb-2">
-                <button className="px-6 py-2 bg-gradient-to-r from-green-400 to-yellow-400 hover:from-green-500 hover:to-yellow-500 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg text-sm">
+                <button 
+                  className="px-6 py-2 bg-gradient-to-r from-green-400 to-yellow-400 hover:from-green-500 hover:to-yellow-500 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
+                  onClick={() => navigate('/portfolio/visual')}
+                  >
                   {t('portfolios.buttonVisual')}
                 </button>
               </div>
@@ -414,7 +417,7 @@ const Home = () => {
         </div>
       </section>
       {/* Contact Section */}
-      <section id="contact-section" className="min-h-screen flex items-center justify-center p-4">
+      <section id="contact-section" className="min-h-screen flex items-center justify-center p-4 mb-16">
         <div className="relative w-full max-w-6xl">
           <div className="relative">
             <div 

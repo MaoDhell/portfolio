@@ -170,7 +170,7 @@ const Navbar = () => {
 
   const portfolioOptions = [
     { path: '/portfolio/software', label: 'Software' },
-    { path: '/portfolio/desarrollo-visual', label: 'Desarrollo Visual' }
+    { path: '/portfolio/visual', label: 'Desarrollo Visual' }
   ];
 
   return (

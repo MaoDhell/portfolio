@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import wallpaperDev from '../assets/images/Gishiki .png';
+import wallpaperDev from '../assets/images/gato.png';
 import TechMarquee from '../components/TechMarquee';
 import devFrame from '../assets/borders/dev.svg';
 import Lottie from 'lottie-react';
@@ -16,7 +16,7 @@ const SoftwareDev = () => {
   const projectsPerPage = 6;
 
   const DevFrame = ({ children, className = "" }) => (
-    <div className={`relative ${className}`}>
+    <div className={`relative w-70 h-86 box-border ${className}`}>
       <img 
         src={devFrame} 
         alt="Dev Frame" 
@@ -28,7 +28,7 @@ const SoftwareDev = () => {
           transformOrigin: 'center'
         }}
       />
-      <div className="relative z-10 p-6 h-full">
+      <div className="relative z-10 h-full  overflow-hidden">
         {children}
       </div>
     </div>
@@ -66,12 +66,13 @@ const SoftwareDev = () => {
   };
 
   const filteredProjects = useMemo(() => {
-    return mockProjectsDev.filter(project => {
+    const projects = mockProjectsDev(t);
+    return projects.filter(project => {
       const techMatch = selectedTech === 'All' || project.technologies.includes(selectedTech);
       const typeMatch = selectedType === 'All' || project.type === selectedType;
       return techMatch && typeMatch;
     });
-  }, [selectedTech, selectedType]);
+  }, [selectedTech, selectedType, t]);
 
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
   const startIndex = (currentPage - 1) * projectsPerPage;
@@ -88,7 +89,7 @@ const SoftwareDev = () => {
           <img 
             src={wallpaperDev} 
             alt="Background" 
-            className="absolute top-0 left-0 w-full h-full object-cover object-center"
+            className="absolute top-0 left-0 w-full h-full object-cover object-[25%_95%]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-dark-90 via-dark-50 to-dark-90" />
         </div>
@@ -209,12 +210,12 @@ const SoftwareDev = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-60  mb-32">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-60 mb-40">
             {currentProjects.map(project => (
-              <DevFrame key={project.id} className="h-74">
-                <div className="flex flex-col h-full">
-                  {/* Project Image Placeholder */}
-                  <div className="w-full h-32 rounded-lg mb-4 overflow-hidden">
+              <DevFrame key={project.id}>
+                <div className="flex flex-col h-full mx-6">
+                  {/* Project Image */}
+                  <div className="w-full h-40 rounded-lg mb-4 overflow-hidden ">
                     {project.image ? (
                       <img 
                         src={project.image} 
@@ -222,18 +223,18 @@ const SoftwareDev = () => {
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                        <span className="text-gray-400 text-sm">Sin imagen</span>
+                      <div className="w-full h-full bg-dark flex items-center justify-center">
+                        <span className=" text-pink text-sm font-medium"> 猫D </span>
                       </div>
                     )}
                   </div>
                   
                   {/* Project Info */}
                   <h3 className="font-bold text-lg mb-2 text-white">{project.title}</h3>
-                  <p className="text-gray-300 text-sm mb-3 flex-grow">{project.description}</p>
+                  <p className="text-gray-300 text-sm mb-4 flex-grow">{project.description}</p>
                   
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-1 mb-8">
+                  <div className="flex flex-wrap gap-1 mb-6">
                     {project.technologies.map(tech => (
                       <span key={tech} className="px-2 py-1 bg-purple-600/20 text-purple-300 text-xs rounded">
                         {tech}
@@ -242,12 +243,12 @@ const SoftwareDev = () => {
                   </div>
                   
                   {/* Action Buttons */}
-                  <div className="flex gap-2 mt-auto">
-                    <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-3 py-2 rounded text-sm font-medium transition-all">
+                  <div className="flex gap-5 mt-auto">
+                    <button 
+                      onClick={() => window.open(project.github, '_blank')}
+                      className="flex-1 bg-gradient-to-r from-purple-600 to-pink hover:from-purple-700 hover:to-pink-700 px-2 py-3 rounded-lg text-sm font-medium transition-all"
+                    >
                       GitHub
-                    </button>
-                    <button className="flex-1 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 px-3 py-2 rounded text-sm font-medium transition-all">
-                      Ver más
                     </button>
                   </div>
                 </div>

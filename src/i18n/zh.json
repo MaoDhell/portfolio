@@ -104,5 +104,13 @@
     "academic": "学术项目",
     "freelance": "自由职业/客户",
     "openSource": "个人项目"
+  },
+  
+"more": "查看更多",
+"project1": {
+    "title": "兽医管理系统",
+    "description": "用于管理患者（宠物）信息、医疗历史、预约等的应用程序。",
+    "type": "学术项目"
   }
+
 }

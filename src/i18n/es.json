@@ -104,6 +104,14 @@
     "academic": "Proyectos de clase",
     "freelance": "Freelance / Clientes",
     "openSource": "Personales"
-  }
+  },
+
+  "more": "Ver Más",
+
+  "project1": {
+    "title": "Sistema de gestión veterinaria",
+    "description": "Aplicación para administrar información de pacientes (mascotas), historial médico, citas y más...",
+    "type": "Proyectos de clase"
+  } 
 }
 
