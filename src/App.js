@@ -8,8 +8,7 @@ import VisualDev from './pages/VisualDev';
 
 function App() {
   return (
-    <Router>
-      <Router basename="/portfolio"></Router>
+    <Router basename="/portfolio">
       <div className="App relative min-h-screen">
         <Navbar />
         <div>
