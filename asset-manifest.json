@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MaoDhell/portfolio/static/css/main.a842d89e.css",
-    "main.js": "/MaoDhell/portfolio/static/js/main.04bf59ea.js",
+    "main.js": "/MaoDhell/portfolio/static/js/main.63042428.js",
     "static/js/453.ad7768ec.chunk.js": "/MaoDhell/portfolio/static/js/453.ad7768ec.chunk.js",
     "static/media/gato.png": "/MaoDhell/portfolio/static/media/gato.a9db302cf1ce223feb51.png",
     "static/media/Dhell.png": "/MaoDhell/portfolio/static/media/Dhell.ac42c75a4c2deb7197a3.png",
@@ -25,11 +25,11 @@
     "static/media/tools.svg": "/MaoDhell/portfolio/static/media/tools.8138d5a04821548ee2c68e4d2df92336.svg",
     "index.html": "/MaoDhell/portfolio/index.html",
     "main.a842d89e.css.map": "/MaoDhell/portfolio/static/css/main.a842d89e.css.map",
-    "main.04bf59ea.js.map": "/MaoDhell/portfolio/static/js/main.04bf59ea.js.map",
+    "main.63042428.js.map": "/MaoDhell/portfolio/static/js/main.63042428.js.map",
     "453.ad7768ec.chunk.js.map": "/MaoDhell/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a842d89e.css",
-    "static/js/main.04bf59ea.js"
+    "static/js/main.63042428.js"
   ]
 }
