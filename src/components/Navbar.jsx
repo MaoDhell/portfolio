@@ -72,6 +72,19 @@ const Navbar = () => {
     }
   };
 
+  const handleMobilePortfolioClick = () => {
+  setPortfolioDropdownOpen(!portfolioDropdownOpen);
+  if (dropdownLottieRef.current) {
+    if (!portfolioDropdownOpen) {
+      dropdownLottieRef.current.setDirection(1);
+      dropdownLottieRef.current.play();
+    } else {
+      dropdownLottieRef.current.setDirection(-1);
+      dropdownLottieRef.current.play();
+    }
+  }
+};
+
   const handlePortfolioHover = (isHovering) => {
     if (hoverTimeout) {
       clearTimeout(hoverTimeout);
@@ -100,16 +113,20 @@ const Navbar = () => {
 
   const handleDropdownOption = (optionPath) => {
     if (hoverTimeout) {
-      clearTimeout(hoverTimeout);
-      setHoverTimeout(null);
+    clearTimeout(hoverTimeout);
+    setHoverTimeout(null);
     }
 
     // Cerrar dropdown inmediatamente
     setPortfolioDropdownOpen(false);
+    setMenuOpen(false);
+    
     if (dropdownLottieRef.current) {
       dropdownLottieRef.current.setDirection(-1);
       dropdownLottieRef.current.play();
     }
+
+    
 
     // Navegar
     navigate(optionPath);
@@ -210,7 +227,7 @@ const Navbar = () => {
                 {navItems.map((item) => (
                   <div key={item.path} className="flex flex-col">
                     <button
-                      onClick={() => item.hasDropdown ? handlePortfolioClick() : handleNav(item)}
+                      onClick={() => item.hasDropdown ? handleMobilePortfolioClick() : handleNav(item)}
                       className={`relative px-1 py-2 text-white transition-all duration-300 text-left
                         ${(location.pathname === item.path || 
                           (item.path === '/about' && location.pathname === '/' && location.hash === '#about-me') || 
@@ -231,11 +248,15 @@ const Navbar = () => {
                     </button>
                     
                     {item.hasDropdown && portfolioDropdownOpen && (
-                      <div className="ml-4 mt-2">
+                      <div 
+                        className="ml-4 mt-2"
+                      >
                         {portfolioOptions.map((option) => (
                           <button
                             key={option.path}
-                            onClick={() => handleDropdownOption(option.path)}
+                            onClick={() => 
+                              handleDropdownOption(option.path)
+                            }
                             className="block w-full text-left px-2 py-1 text-white/80 hover:text-white hover:bg-white/10 rounded transition-all duration-200"
                           >
                             <span className="font-genos">{option.label}</span>

@@ -73,6 +73,7 @@
   "contact": {
     "title": "¡Hablemos!",
     "subtitle": "¿Colaborar? ¿Crear /n algo brutal? ¿Solo /n decir hola? /n Estoy abierta a /n nuevos proyectos, /n equipos y retos.",
+    "subtitleMovil": "¿Colaborar? ¿Crear algo brutal? ¿Solo decir hola? Estoy abierta a nuevos proyectos, equipos y retos.",
     "form": {
       "nameLabel": "Tu nombre",
       "emailLabel": "Tu correo electrónico",
@@ -112,6 +113,12 @@
     "title": "Sistema de gestión veterinaria",
     "description": "Aplicación para administrar información de pacientes (mascotas), historial médico, citas y más...",
     "type": "Proyectos de clase"
-  } 
+  },
+
+  "project2": {
+    "title": "Zentrix",
+    "description": "Centraliza el seguimiento de facturas, genera alertas clave, registra trazabilidad y produce informes automaticos.",
+    "type": "Proyectos de clase"
+  }
 }
 

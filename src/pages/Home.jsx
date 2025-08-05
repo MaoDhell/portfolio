@@ -16,6 +16,7 @@ import frameStats3 from '../assets/borders/stats 1.svg';
 import frameDev from '../assets/borders/portfolio 1.svg';
 import frameVisual from '../assets/borders/portfolio 2.svg';
 import contactFrame from '../assets/borders/contact.svg';
+import contactFrameMovil from '../assets/borders/contactMovil.svg';
 
 
 const Home = () => {
@@ -358,28 +359,28 @@ const Home = () => {
       </section>
       {/* Portfolio section */}
       <section id="portfolio-home" className="flex flex-col items-center justify-center px-4 py-4 relative z-10 w-full max-w-7xl mb-10 -mt-5 mx-auto my-5">
-        <h2 className="font-mochiy text-5xl text-light mb-12 text-right tracking-wide pr-[50rem]">{t('portfolios.title')}</h2>   
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 w-full">
+        <h2 className="font-mochiy text-3xl md:text-5xl text-light mb-8 md:mb-12 text-center md:text-right tracking-wide md:pr-[50rem]">{t('portfolios.title')}</h2>   
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24 w-full">
           {/* Card Software Dev */}
-          <div className="relative w-full  lg:max-w-md transform -rotate-3 hover:rotate-0 transition-transform duration-300"
+          <div className="relative w-full lg:max-w-md transform -rotate-1 md:-rotate-3 hover:rotate-0 transition-transform duration-300"
             style={{maxWidth: '680px'}}>
             <img 
               src={frameDev} 
               alt="Software Dev Frame" 
               className="w-full h-auto object-contain pointer-events-none"
             />
-            <div className="absolute inset-0 flex flex-col justify-between p-24 pt-12 pb-16">
-              <div className="text-left ">  
-                <div className="w-full max-w-md h-12 mb-1 flex items-center justify-center">
-                  <span className="text-sm font-genos typing-animation">- LOADING PORTFOLIO_SOFTWARE...[OK]<span className="blink">_</span></span>                  
+            <div className="absolute inset-0 flex flex-col justify-between p-4 pt-3 pb-4 md:p-24 md:pt-12 md:pb-16">
+              <div className="text-left flex-1">  
+                <div className="w-full max-w-md h-6 md:h-12 mb-1 flex items-center justify-center">
+                  <span className="text-xs md:text-sm font-genos typing-animation">- LOADING PORTFOLIO_SOFTWARE...[OK]<span className="blink">_</span></span>                  
                 </div>              
                 {/* Título  */}
-                <h3 className="text-3xl font-bold text-white mb-5">{t('portfolios.softTitle')} </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">{t('portfolios.softDesc')} </p>
+                <h3 className="text-lg md:text-3xl font-bold text-white mb-2 md:mb-5">{t('portfolios.softTitle')} </h3>
+                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-4 md:line-clamp-none">{t('portfolios.softDesc')} </p>
               </div>
-              <div className="mt-6">
+              <div className="mt-2 md:mt-6 flex-shrink-0">
                 <button 
-                className="px-6 py-2 bg-gradient-to-r from-pink to-neon  hover:from-pink-600 hover:to-neon-500 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
+                className="px-3 py-1.5 md:px-6 md:py-2 bg-gradient-to-r from-pink to-neon hover:from-pink-600 hover:to-neon-500 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg text-xs md:text-sm"
                 onClick={() => navigate('/portfolio/software')}
                 >
                   {t('portfolios.buttonSoft')}
@@ -389,24 +390,24 @@ const Home = () => {
           </div>
 
           {/* Card Visual Dev */}
-          <div className="relative w-full max-w-lg transform rotate-2 hover:rotate-0 transition-transform duration-300"
+          <div className="relative w-full max-w-lg transform rotate-1 md:rotate-2 hover:rotate-0 transition-transform duration-300"
             style={{maxWidth: '330px'}}>
             <img 
               src={frameVisual} 
               alt="Visual Dev Frame" 
               className="w-full h-auto object-contain pointer-events-none"
             />
-            <div className="absolute inset-0 flex flex-col justify-center items-center p-8 px-10">
+            <div className="absolute inset-0 flex flex-col justify-center items-center p-4 md:p-8 md:px-10">
               <div className="text-center flex-1 flex flex-col justify-center">                
                 {/* Título  */}
-                <h3 className="text-2xl font-bold text-white mb-4">{t('portfolios.visualTitle')}</h3>
-                <p className="text-gray-300 text-sm leading-relaxed mb-8">
+                <h3 className="text-lg md:text-2xl font-bold text-white mb-2 md:mb-4">{t('portfolios.visualTitle')}</h3>
+                <p className="text-gray-300 text-xs md:text-sm leading-relaxed mb-4 md:mb-8 line-clamp-3 md:line-clamp-none">
                   {t('portfolios.visualDesc')}
                 </p>
               </div>
-              <div className="mt-auto mb-2">
+              <div className="mt-auto mb-1 md:mb-2 flex-shrink-0">
                 <button 
-                  className="px-6 py-2 bg-gradient-to-r from-green-400 to-yellow-400 hover:from-green-500 hover:to-yellow-500 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
+                  className="px-3 py-1.5 md:px-6 md:py-2 bg-gradient-to-r from-green-400 to-yellow-400 hover:from-green-500 hover:to-yellow-500 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg text-xs md:text-sm"
                   onClick={() => navigate('/portfolio/visual')}
                   >
                   {t('portfolios.buttonVisual')}
@@ -416,8 +417,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Contact Section */}
-      <section id="contact-section" className="min-h-screen flex items-center justify-center p-4 mb-16">
+      {/* Contact Section Desk*/}
+      <section id="contact-section" className="hidden min-h-screen md:flex  items-center justify-center p-4 mb-16">
         <div className="relative w-full max-w-6xl">
           <div className="relative">
             <div 
@@ -521,6 +522,102 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* Contact Section Movil*/}
+      <section id="contact-section" className='md:hidden mt-[8rem] mb-[4rem]'>
+        <div className="relative w-full max-w-5xl mx-auto px-4">
+          <div className="relative">
+            <div 
+              className="w-full h-auto"
+              style={{
+                backgroundImage: `url(${contactFrameMovil})`,
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                aspectRatio: '2/1',
+                minHeight: '420px'
+              }}
+            ></div>
+
+            {/* Content overlay */}
+            <div className="absolute inset-0">
+              {/* Title positioned higher */}
+              <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
+                <h1 className="text-3xl md:text-4xl font-bold text-white text-center">
+                  {t('contact.title')}
+                </h1>
+              </div>
+              
+              {/* Text in upper area - CENTRADO */}
+              <div className="absolute top-12 left-1/2 transform -translate-x-1/2 w-full max-w-xs px-6">
+                <p className=" text-xs leading-tight  text-center">
+                  {t("contact.subtitleMovil").split('/n').map((line, index) => (
+                    <div key={index}>{line}</div>
+                  ))}
+                </p>
+              </div>
+
+              {/* Contact form */}
+              <div className="absolute inset-0 flex flex-col justify-center items-center px-12 mt-[4rem]">
+                <div className="backdrop-blur-sm rounded-2xl p-6 w-full max-w-xs mx-auto">                  
+                  {submitted ? (
+                    <div className="text-center py-6">
+                      <div className="text-green-400 text-base mb-2">✓ {t("contact.successMessage")}</div>
+                      <p className="text-pink text-sm">{t("contact.successMessage")}</p>
+                    </div>
+                  ) : (
+                    <div className="space-y-3">
+                      <div>
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder={t("contact.form.nameLabel")}
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          required
+                          className="w-full px-3 py-2 bg-transparent border border-pink-500/50 rounded-lg text-white placeholder-pink-300/70 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-500/30 transition-all text-sm"
+                        />
+                      </div>
+                      
+                      <div>
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder={t("contact.form.emailLabel")}
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          required
+                          className="w-full px-3 py-2 bg-transparent border border-pink-500/50 rounded-lg text-white placeholder-pink-300/70 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-500/30 transition-all text-sm"
+                        />
+                      </div>
+                      
+                      <div>
+                        <textarea
+                          name="message"
+                          placeholder={t("contact.form.messageLabel")}
+                          value={formData.message}
+                          onChange={handleInputChange}
+                          required
+                          rows="3"
+                          className="w-full px-3 py-2 bg-transparent border border-pink-500/50 rounded-lg text-white placeholder-pink-300/70 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-500/30 transition-all resize-none text-sm"
+                        ></textarea>
+                      </div>
+                      
+                      <button
+                        type="button"
+                        onClick={handleSubmit}
+                        disabled={isSubmitting}
+                        className="w-full py-2.5 px-4 bg-gradient-to-r from-pink to-neon text-white font-semibold rounded-lg hover:from-fuchsia hover:to-neonYellow focus:outline-none focus:ring-2 focus:ring-pink-500/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-105 shadow-lg text-sm"
+                      >
+                        {isSubmitting ? "Sending..." : t("contact.form.submitButton")}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>         
       </section>
     </main>
   );

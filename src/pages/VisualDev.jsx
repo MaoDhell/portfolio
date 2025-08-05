@@ -16,7 +16,7 @@ const VisualDev = () => {
   const projectsPerPage = 6;
 
   const VisualFrame = ({ children, className = "" }) => (
-    <div className={`relative w-70 h-86 box-border ${className}`}>
+    <div className={`relative w-70 h-86 box-border ml-16 ${className}`}>
       <img 
         src={devFrame} 
         alt="Dev Frame" 

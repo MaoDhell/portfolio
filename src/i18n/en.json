@@ -73,6 +73,7 @@
 "contact": {
     "title": "Let's Talk!",
     "subtitle": "Want to collaborate? /n Create something awesome?/n Or just say hello? /n I'm open to new /n projects, teams, and /n challenges.",
+    "subtitleMovil": "Want to collaborate? Create something awesome? Or just say hello? I'm open to new projects, teams, and challenges.",
     "form": {
       "nameLabel": "Your name",
       "emailLabel": "Your email address",
@@ -110,6 +111,11 @@
 "project1": {
     "title": "Veterinary Management System",
     "description": "Application to manage patient (pet) information, medical history, appointments, and more...",
+    "type": "Academic Projects"
+  },
+  "project2": {
+    "title": "Zentrix",
+    "description": "Centralizes invoice tracking, generates key alerts, records traceability, and produces automatic reports.",
     "type": "Academic Projects"
   }
 }
