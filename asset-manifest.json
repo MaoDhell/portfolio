@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ac296da6.css",
-    "main.js": "/portfolio/static/js/main.450f2965.js",
+    "main.css": "/portfolio/static/css/main.c9054df3.css",
+    "main.js": "/portfolio/static/js/main.496db666.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
+    "static/media/Frasquito .png": "/portfolio/static/media/Frasquito .f6417bd2dff42be1682c.png",
     "static/media/gato.png": "/portfolio/static/media/gato.a9db302cf1ce223feb51.png",
+    "static/media/Gishiki .png": "/portfolio/static/media/Gishiki .c7954710098b6197cd49.png",
     "static/media/Dhell.png": "/portfolio/static/media/Dhell.ac42c75a4c2deb7197a3.png",
+    "static/media/payaso.png": "/portfolio/static/media/payaso.eda9f323ceea3505c892.png",
     "static/media/Wallpapersaludo.png": "/portfolio/static/media/Wallpapersaludo.3bcc5735680c771bf71c.png",
     "static/media/mao.png": "/portfolio/static/media/mao.deff60c089c1456f5516.png",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.4b35ca879974653620b3.png",
@@ -27,12 +30,12 @@
     "static/media/stats 4.svg": "/portfolio/static/media/stats 4.b9a98a6ad751f6c6ff0a664a15ed8cdc.svg",
     "static/media/tools.svg": "/portfolio/static/media/tools.8138d5a04821548ee2c68e4d2df92336.svg",
     "index.html": "/portfolio/index.html",
-    "main.ac296da6.css.map": "/portfolio/static/css/main.ac296da6.css.map",
-    "main.450f2965.js.map": "/portfolio/static/js/main.450f2965.js.map",
+    "main.c9054df3.css.map": "/portfolio/static/css/main.c9054df3.css.map",
+    "main.496db666.js.map": "/portfolio/static/js/main.496db666.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac296da6.css",
-    "static/js/main.450f2965.js"
+    "static/css/main.c9054df3.css",
+    "static/js/main.496db666.js"
   ]
 }
