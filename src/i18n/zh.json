@@ -88,6 +88,7 @@
 
   "softDev": {
     "title": "软件开发",
+    "navbarLabel": "软件开发",
     "subtitle": "软件开发和功能原型设计。/n 涵盖网页、/n 应用程序以及交互系统和游戏的逻辑开发。"
 },
 "filters": {
@@ -106,17 +107,71 @@
     "freelance": "自由职业/客户",
     "openSource": "个人项目"
   },
+
+  "visualDev": {
+    "title": "视觉开发",
+    "navbarLabel": "视觉开发",
+    "subtitle": "视觉设计与插画。/n 从角色设计到数字艺术。/n 概念艺术、角色设计、场景和资产制作。"
+  },
+  "projectsTypeVisual": {
+  "all": "全部",
+  "illustration": "插画",
+  "assets": "素材",
+  "props": "道具",
+  "3dDesign": "3D设计",
+  "conceptArt": "概念艺术",
+  "conceptualArt": "概念艺术",
+  "scenarios": "场景",
+  "freelance": "自由职业",
+  "personal": "个人项目"
+},
   
 "more": "查看更多",
+"zoom":"🔍 点击放大",
+"description":" 描述",
+"tools":"使用的工具",
+"type":"类型",
+"close": "关闭",
+"reset": "重置",
+"instructions1": "🔍 鼠标滚轮：缩放",
+"instructions2": "🖱️ 拖动：移动图像",
+"instructions3": "重置：恢复视图",
+
+  
+
 "project1": {
     "title": "兽医管理系统",
     "description": "用于管理患者（宠物）信息、医疗历史、预约等的应用程序。",
-    "type": "学术项目"
+    "type": "Proyectos de clase"
   },
   "project2": {
     "title": "Zentrix",
     "description": "集中跟踪发票，生成关键警报，记录可追溯性，并生成自动报告。",
-    "type": "学术项目"
+    "type": "Proyectos de clase"
+  },
+  "project3": {
+    "title": "个人网站",
+    "description": "个人网站，展示我作为软件和视觉开发者的身份，展示我的精选项目。",
+    "type": "Personales"
+  },
+
+
+
+  "viproject1": {
+  "title": "在功能与裂缝之间",
+  "description": "疲惫的身体被迫停歇，介于表演的外表与灯光熄灭后的残余之间。"
+},
+"viproject2": {
+    "title": "盲目奉献",
+    "description": "在无声的举动中，毫无保留地交出了真心。当一切尽在不言中时，目光已是多余。"
+  },
+  "viproject3": {
+    "title": "梦的碎片",
+    "description": "一个本可能存在的片段，被封存在角落。它既非回忆，亦非当下。一切轻柔漂浮，仿佛时间沉睡着。色彩甜美，但空气中却弥漫着不安。"
+  },
+  "viproject4": {
+    "title": "自由落体",
+    "description": "一幅概念插画，表现强加于女性的审美标准所带来的无声压力。女性形象坠入一个由化妆品、包装和柔和色彩等与美相关的物体构成的美学和谐环境中。环境的柔美与人物肢体语言的对比，传递出控制与屈服之间的暧昧张力。构图旨在揭示审美理想如何成为一种被伪装成常态的压迫性结构。"
   }
 
 }

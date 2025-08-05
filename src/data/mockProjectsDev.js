@@ -1,5 +1,6 @@
 import project1Img from "../assets/images/1.png";
 import project2Img from "../assets/images/Zentrix.png";
+import project3Img from "../assets/images/portfolio.png";
 
 export const mockProjectsDev = (t) => [
   {
@@ -19,14 +20,24 @@ export const mockProjectsDev = (t) => [
     technologies: ["React", "Tailwind", "Node.js"],
     type: t("project2.type"),
     github: "https://github.com/danielalvarezm527/BilBot",
+  },
+  {
+    id: 3,
+    title: t("project3.title"),    
+    image: project3Img,
+    description: t("project3.description"),
+    technologies: ["React", "Tailwind", "JavaScript"],
+    type: t("project3.type"),
+    github: ""
   }
+
 ];
 
 
 export const technologies = [
   'All', 'React', 'Python', 'Blender', 'Java', 'HTML/CSS', 
   'Tailwind', 'Firebase', 'Three.js', 'Unity', 'SQL Server', 
-  'Node.js', 'Express', 'Spring Boot', 'MySQL'
+  'Node.js', 'Express', 'Spring Boot', 'MySQL', 'JavaScript'
 ];
 
 export const projectTypes = [

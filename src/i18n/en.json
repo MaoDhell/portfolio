@@ -88,6 +88,7 @@
 
   "softDev": {
     "title": "Software /n Dev",
+    "navbarLabel": "Software Dev",
     "subtitle": "Software development and /n functional prototypes. Web, /n Apps and logic for interactive /n systems and videogames."
 },
 "filters":{
@@ -107,15 +108,68 @@
       "openSource": "Personal"
   },
 
+  "visualDev": {
+    "title": "Visual /n Dev",
+    "navbarLabel": "Visual Dev",
+    "subtitle": "Visual design and /n illustration. From character /n design to digital art. /n Concept art, character design, /n environments and assets."
+  },
+  "projectsTypeVisual": {
+  "all": "All",
+  "illustration": "Illustration",
+  "assets": "Assets",
+  "props": "Props",
+  "3dDesign": "3D Designs",
+  "conceptArt": "Concept Art",
+  "conctualArt": "Conceptual Art",
+  "scenarios": "Scenarios",
+  "freelance": "Freelance",
+  "personal": "Personal Projects"
+},
+
 "more": "View More",
+"zoom":"🔍 Click to enlarge",
+"description": "Description",
+"tools":"Tools used",
+"type":"Type",
+"close": "Close",
+"reset": "Reset",
+"instructions1": "🔍 Mouse wheel: Zoom",
+"instructions2": "🖱️ Drag: Move image",
+"instructions3": "Reset: Restore view",
+
 "project1": {
     "title": "Veterinary Management System",
     "description": "Application to manage patient (pet) information, medical history, appointments, and more...",
-    "type": "Academic Projects"
+    "type": "Proyectos de clase"
   },
   "project2": {
     "title": "Zentrix",
     "description": "Centralizes invoice tracking, generates key alerts, records traceability, and produces automatic reports.",
-    "type": "Academic Projects"
+    "type": "Proyectos de clase"
+  },
+  "project3": {
+    "title": "Web Portfolio",
+    "description": "Personal website where I present myself as a software and visual developer, showcasing my featured projects.",
+    "type": "Personales"  
+  },
+
+
+
+  "viproject1": {
+  "title": "Between Functions and Cracks",
+  "description": "A weary body in forced pause, between the show's facade and what remains when the lights go out."
+},
+"viproject2": {
+    "title": "Blind Devotion",
+    "description": "In a silent act, the heart is surrendered without certainty. The gaze is unnecessary when the gesture says it all."
+  },
+  "viproject3": {
+    "title": "Fragments of a Dream",
+    "description": "An encapsulated corner of something that could have been. It's not a memory, nor is it the present. Everything floats softly, as if time were asleep. The colors are sweet, but there's unease in the air."
+  },
+  "viproject4": {
+    "title": "Free Fall",
+    "description": "A conceptual illustration depicting the silent pressure of beauty standards imposed on women. A feminine figure falls through an aesthetically harmonious environment, composed of beauty-related objects like cosmetics, packaging, and soft colors. The contrast between the surroundings' gentleness and the figure's body language conveys an ambiguous tension between control and surrender. The composition reflects how beauty ideals can become oppressive structures, disguised as normality."
   }
+
 }

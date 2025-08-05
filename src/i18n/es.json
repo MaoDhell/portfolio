@@ -88,6 +88,7 @@
 
   "softDev": {
     "title": "Desarrollo /n de Software",
+    "navbarLabel": "Desarrollo de Software",
     "subtitle": "Desarrollo de software y /n prototipos funcionales. Web, /naplicaciones y lógica para sistemas /n interactivos y videojuegos."
 },
 "filters":{
@@ -106,8 +107,35 @@
     "freelance": "Freelance / Clientes",
     "openSource": "Personales"
   },
+  "visualDev": {
+    "title": "Desarrollo /n Visual",
+    "navbarLabel": "Desarrollo Visual",
+    "subtitle": "Diseño visual e /n ilustración. Desde diseño de /n personajes hasta arte digital. /n Concept art, diseño de personajes, /n escenarios y assets."
+  },
+  "projectsTypeVisual": {
+  "all": "All",
+  "illustration": "Ilustracion",
+  "assets": "Assets",
+  "props": "Props",
+  "3dDesign": "Diseños 3D",
+  "conceptArt": "Concept art",
+  "conceptualArt": "Arte Conceptual",
+  "scenarios": "Escenarios",
+  "freelance": "Freelance",
+  "personal": "Personales"
+},
 
   "more": "Ver Más",
+  "zoom": "🔍 Click para ampliar",
+  "description": "Descripción",
+  "tools":"Herramientas utilizadas",
+  "type":"Tipo",
+  "close": "Cerrar",
+  "reset": "Restablecer",
+  "instructions1": "🔍 Rueda del mouse: Zoom",
+  "instructions2": "🖱️ Arrastrar: Mover imagen",
+  "instructions3": "Reset: Restaurar vista",
+
 
   "project1": {
     "title": "Sistema de gestión veterinaria",
@@ -119,6 +147,30 @@
     "title": "Zentrix",
     "description": "Centraliza el seguimiento de facturas, genera alertas clave, registra trazabilidad y produce informes automaticos.",
     "type": "Proyectos de clase"
+  },
+  "project3": {
+    "title": "Portafolio Web",
+    "description": "Sitio web personal donde me presento como desarrolladora de software y visual, donde muestro mis proyectos destacados.",
+    "type": "Personales"  
+  },
+
+
+
+  "viproject1": {
+    "title": "Entre funciones y fisuras",
+    "description": "Un cuerpo cansado en pausa forzada, entre la fachada del show y lo que queda cuando las luces se apagan."
+  },
+  "viproject2": {
+    "title": "Devoción ciega",
+    "description": "En un acto silencioso, se entrega el corazón sin certezas. La mirada no hace falta cuando el gesto lo dice todo."
+  },
+  "viproject3": {
+    "title": "Fragmentos de un sueño",
+    "description": "Un rincón encapsulado de algo que pudo haber sido. No es un recuerdo, pero tampoco presente. Todo flota con suavidad, como si el tiempo estuviera dormido. Los colores son dulces, pero hay inquietud en el aire."
+  },
+  "viproject4": {
+    "title": "Caída Libre",
+    "description": "Ilustracion conceptual que representa la presión silenciosa de los estándares de belleza impuestos a las muujeres. La figura femenina cae en un entorno estéticamente armonioso, compuesto por objetos relacionados con la belleza, como cosméticos, envases y colores suaves. El contraste entre la suavidad del entorno y la expresión corporal transmite una sensación ambigua entre control y rendición. La composición busca reflejar cómo el ideal de belleza puede convertirse en un estructura opresiva, disfrazada de normalidad. "
   }
 }
 

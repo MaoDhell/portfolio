@@ -186,8 +186,8 @@ const Navbar = () => {
   ];
 
   const portfolioOptions = [
-    { path: '/portfolio/software', label: 'Software' },
-    { path: '/portfolio/visual', label: 'Desarrollo Visual' }
+    { path: '/portfolio/software', label: t('softDev.navbarLabel') },
+    { path: '/portfolio/visual', label: t('visualDev.navbarLabel') }
   ];
 
   return (

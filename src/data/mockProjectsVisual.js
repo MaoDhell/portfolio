@@ -1,31 +1,61 @@
-import project1Img from "../assets/images/1.png";
+import project1Img from "../assets/images/payaso.png";
+import project2Img from "../assets/images/Gishiki .png";
+import project3Img from "../assets/images/Frasquito .png";
+import project4Img from "../assets/images/down.jpg";
 
 export const mockProjectsVisual = (t) => [
   {
     id: 1,
-    title: t("project1.title"),    
+    title: t("viproject1.title"),    
     image: project1Img,
-    description: t("project1.description"),
-    technologies: ["Java", "MySQL", "Spring Boot"],
-    type: t("project1.type"),
-    github: "https://github.com/MaoDhell/Construccion2LauraEscobar",
+    description: t("viproject1.description"),
+    technologies: ["Photoshop"],
+    type: ["Personales", "Ilustracion"],
+  },
+  {
+    id: 2,
+    title: t("viproject2.title"),   
+    image: project2Img,
+    description: t("viproject2.description"),
+    technologies: ["Photoshop"],
+    type: ["Personales", "Ilustracion"],
+  },
+  {
+    id: 3,
+    title: t("viproject3.title"),
+    image: project3Img,
+    description: t("viproject3.description"), 
+    technologies: ["Photoshop"],
+    type: ["Personales", "Ilustracion", "Arte Conceptual"],
+  },
+  {
+    id: 4,
+    title: t("viproject4.title"),
+    image: project4Img,
+    description: t("viproject4.description"),
+    technologies: ["Photoshop"],
+    type: ["Personales", "Ilustracion", "Arte Conceptual"],
   }
+  
 ];
 
 
 export const technologies = [
-  'All', 'React', 'Python', 'Blender', 'Java', 'HTML/CSS', 
-  'Tailwind', 'Firebase', 'Three.js', 'Unity', 'SQL Server'
+  'All', 'Photoshop', 'Illustrator', 'Blender', 'Figma', 
+  'Unreal Engine', 'Unity', 'ZBrush', 'Substance Painter', 
+  'After Effects', 'InDesign'
+  
 ];
 
 export const projectTypes = [
   'All',
-  'Aplicaciones Web',
-  'Videojuegos', 
+  'Ilustracion',
+  'Assets',
+  'Props',
   'Diseños 3D',
-  'Interfaces UI',
-  'Productos digitales',
-  'Proyectos de clase',
+  'Concept art',
+  'Arte Conceptual',
+  'Escenarios',
   'Freelance',
   'Personales'
 ];
