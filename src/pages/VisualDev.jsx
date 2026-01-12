@@ -601,17 +601,15 @@ const VisualDev = () => {
                   <h3 className="font-bold text-sm sm:text-base mb-2 text-white leading-tight flex-shrink-0 text-left">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 text-xs mb-4 text-left leading-relaxed">
+                  <p className="text-gray-300 text-xs mb-4 text-left leading-relaxed line-clamp-3">
                     {project.description}
                   </p>
                   
                   {/* Technologies - Alineadas a la izquierda */}
                   <div className="flex flex-wrap justify-start gap-1 mb-8 flex-shrink-0">
-                    {project.technologies.map(tech => (
-                      <span key={tech} className="px-1.5 py-0.5 bg-purple-600/20 text-purple-300 text-xs rounded leading-none whitespace-nowrap">
-                        {tech}
+                      <span className="px-1.5 py-0.5 bg-cyan-600/20 text-blue-300 text-xs rounded leading-none whitespace-nowrap">
+                        {project.type}
                       </span>
-                    ))}
                   </div>
                   
                   {/* Action Buttons */}

@@ -139,19 +139,16 @@
 
   "project1": {
     "title": "Sistema de gestión veterinaria",
-    "description": "Aplicación para administrar información de pacientes (mascotas), historial médico, citas y más...",
-    "type": "Proyectos de clase"
+    "description": "Aplicación para administrar información de pacientes (mascotas), historial médico, citas y más..."
   },
 
   "project2": {
     "title": "Zentrix",
-    "description": "Centraliza el seguimiento de facturas, genera alertas clave, registra trazabilidad y produce informes automaticos.",
-    "type": "Proyectos de clase"
+    "description": "Centraliza el seguimiento de facturas, genera alertas clave, registra trazabilidad y produce informes automaticos."
   },
   "project3": {
     "title": "Portafolio Web",
-    "description": "Sitio web personal donde me presento como desarrolladora de software y visual, donde muestro mis proyectos destacados.",
-    "type": "Personales"  
+    "description": "Sitio web personal donde me presento como desarrolladora de software y visual, donde muestro mis proyectos destacados."
   },
 
 
@@ -170,7 +167,7 @@
   },
   "viproject4": {
     "title": "Caída Libre",
-    "description": "Ilustracion conceptual que representa la presión silenciosa de los estándares de belleza impuestos a las muujeres. La figura femenina cae en un entorno estéticamente armonioso, compuesto por objetos relacionados con la belleza, como cosméticos, envases y colores suaves. El contraste entre la suavidad del entorno y la expresión corporal transmite una sensación ambigua entre control y rendición. La composición busca reflejar cómo el ideal de belleza puede convertirse en un estructura opresiva, disfrazada de normalidad. "
+    "description": "Ilustracion conceptual que representa la presión silenciosa de los estándares de belleza impuestos a las mujeres. La figura femenina cae en un entorno estéticamente armonioso, compuesto por objetos relacionados con la belleza, como cosméticos, envases y colores suaves. El contraste entre la suavidad del entorno y la expresión corporal transmite una sensación ambigua entre control y rendición. La composición busca reflejar cómo el ideal de belleza puede convertirse en un estructura opresiva, disfrazada de normalidad. "
   }
 }
 

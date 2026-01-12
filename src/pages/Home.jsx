@@ -271,7 +271,7 @@ const Home = () => {
             <img 
               src={frameStats3} 
               alt="Cyber Frame"
-              className="absolute top-1/2 left-1/2 w-auto h-[50%] max-w-none -translate-x-[-37%] -translate-y-[-3%] pointer-events-none"
+              className="absolute top-1/2 left-1/2 w-auto h-[50%] max-w-none -translate-x-[-37%] -translate-y-[-8%] pointer-events-none"
               style={{
                 minWidth: "50%",
                 minHeight: "50%",

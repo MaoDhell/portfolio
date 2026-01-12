@@ -9,7 +9,7 @@ export const mockProjectsDev = (t) => [
     image: project1Img,
     description: t("project1.description"),
     technologies: ["Java", "MySQL", "Spring Boot"],
-    type: t("project1.type"),
+    type: [t("projectsType.academic")],
     github: "https://github.com/MaoDhell/Construccion2LauraEscobar",
   },
    {
@@ -18,7 +18,7 @@ export const mockProjectsDev = (t) => [
     image: project2Img,
     description: t("project2.description"),
     technologies: ["React", "Tailwind", "Node.js"],
-    type: t("project2.type"),
+    type: [t("projectsType.webApps")," - ",t("projectsType.academic")],
     github: "https://github.com/danielalvarezm527/BilBot",
   },
   {
@@ -27,7 +27,7 @@ export const mockProjectsDev = (t) => [
     image: project3Img,
     description: t("project3.description"),
     technologies: ["React", "Tailwind", "JavaScript"],
-    type: t("project3.type"),
+    type: [t("projectsType.webApps")," - ",t("projectsType.openSource")],
     github: ""
   }
 

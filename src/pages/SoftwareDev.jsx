@@ -332,6 +332,13 @@ const SoftwareDev = () => {
                         {tech}
                       </span>
                     ))}
+
+                    {/* Tipo de proyecto - Alineado a la izquierda */}
+                    <div className="mt-2">
+                      <span className="px-1.5 py-0.5 bg-cyan-600/20 text-blue-300 text-xs rounded leading-none whitespace-nowrap">
+                        {project.type}
+                      </span>
+                    </div>
                   </div>
                   
                   {/* Action Buttons */}

@@ -10,7 +10,7 @@ export const mockProjectsVisual = (t) => [
     image: project1Img,
     description: t("viproject1.description"),
     technologies: ["Photoshop"],
-    type: ["Personales", "Ilustracion"],
+    type: [t("projectsTypeVisual.personal")," - ",t("projectsTypeVisual.illustration")],
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const mockProjectsVisual = (t) => [
     image: project2Img,
     description: t("viproject2.description"),
     technologies: ["Photoshop"],
-    type: ["Personales", "Ilustracion"],
+    type: [t("projectsTypeVisual.personal")," - ",t("projectsTypeVisual.illustration")],
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const mockProjectsVisual = (t) => [
     image: project3Img,
     description: t("viproject3.description"), 
     technologies: ["Photoshop"],
-    type: ["Personales", "Ilustracion", "Arte Conceptual"],
+    type: [t("projectsTypeVisual.personal")," - ",t("projectsTypeVisual.illustration")," - ",t("projectsTypeVisual.conceptArt")],
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const mockProjectsVisual = (t) => [
     image: project4Img,
     description: t("viproject4.description"),
     technologies: ["Photoshop"],
-    type: ["Personales", "Ilustracion", "Arte Conceptual"],
+    type: [t("projectsTypeVisual.personal")," - ",t("projectsTypeVisual.illustration")," - ",t("projectsTypeVisual.conceptArt")],
   }
   
 ];
