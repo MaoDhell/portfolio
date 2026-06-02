@@ -1,27 +1,30 @@
-# ✨ Portafolio de Laura – Desarrolladora de Software 
+# Portfolio 🌐
 
-¡Hola! Soy Laura, estudiante de Ingeniería de Software con background en sistemas, programación y diseño. Este es mi portafolio web donde muestro mis proyectos personales, académicos y freelance.
+Personal portfolio built with React and Tailwind CSS — showcasing software,
+mobile, and design projects.
 
-## 🚀 Tecnologías y herramientas
+🔗 **Live site:** [maodhell.github.io/portfolio](https://maodhell.github.io/portfolio)
 
-- **Lenguajes:** Python, Java, JavaScript, HTML, CSS
-- **Frameworks y librerías:** React, Tailwind CSS, Streamlit
-- **Bases de datos:** MySQL, SQL Server
-- **Diseño y modelado:** Figma, Blender, Canva, photoshop
-- **Control de versiones:** Git, GitHub
-- **Otras:** Unity, Unreal Engine, XAMPP, Postman
+---
 
-## 🧩 Estructura del portafolio
+## 🛠 Built with
 
-- **Inicio:** Una presentación corta sobre mí
-- **Proyectos:** Filtrables por tipo (app, web, diseño, etc.) y por tecnología usada
-- **Sobre mí:** Más detalles personales y profesionales
-- **Formulario de contacto:** Hecho con [Formspree](https://formspree.io)
+- React · Tailwind CSS
+- Formspree (contact form)
+- Deployed on GitHub Pages
 
-## 📁 Organización del código
+---
 
-- `src/components`: Componentes reutilizables como cards, sliders, etc.
-- `src/pages`: Vistas principales (Home, Proyectos)
-- `src/assets`: Imágenes, íconos, mockups
-- `src/data`: Archivos `.js` con la info de proyectos y tecnologías
-- `public`: Archivos estáticos
+## 📁 Structure
+
+- `src/components` — Reusable components (cards, sliders, etc.)
+- `src/pages` — Main views (Home, Projects)
+- `src/data` — Project and tech data files
+- `src/assets` — Images, icons, mockups
+
+---
+
+## 👩‍💻 Author
+
+Laura Daniela Escobar Ruiz  
+[maodhell.github.io/portfolio](https://maodhell.github.io/portfolio)
