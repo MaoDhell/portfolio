@@ -1,151 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Genos:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Estilos Cyberpunk */
-.cyber-border {
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
   border: 2px solid transparent;
-  background: linear-gradient(#1E1E1E, #1E1E1E) padding-box,
-              linear-gradient(135deg, #E7427E, #08C4D6) border-box;
-  box-shadow: 0 0 10px #08C4D6, 0 0 20px rgba(8, 196, 214, 0.5);
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
 }
 
-.cyber-text-glow {
-  text-shadow: 0 0 5px #08C4D6, 0 0 10px rgba(8, 196, 214, 0.7);
+.hero {
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
 }
 
-.cyber-button {
-  background: linear-gradient(45deg, #E7427E, #D5182E);
-  border: none;
-  color: white;
-  transition: all 0.3s;
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
 }
 
-.cyber-button:hover {
-  box-shadow: 0 0 15px #E7427E, 0 0 30px rgba(231, 66, 126, 0.5);
-  transform: translateY(-2px);
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-.underline-gradient {
-  background: linear-gradient(90deg, #E7427E, #08C4D6);
-  height: 2px;
-  transition: all 0.3s;
+#docs {
+  border-right: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
 }
 
-/* Estilos generales */
-body {
-  background: radial-gradient(circle at 20% 30%, #E7427E22 0%, transparent 50%),
-              radial-gradient(circle at 80% 70%, #08C4D622 0%, transparent 45%),
-              linear-gradient(135deg, #1E1E1D 0%, #000000 100%);
-  background-color: #0B0B0D;
-  color: #BEB6BE;
-  font-family: 'Inter', sans-serif;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+#next-steps ul {
+  list-style: none;
   padding: 0;
-  overflow-x: hidden;
-  
-}
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
 
-h1, .logo-text {
-  font-family: 'Mochiy Pop One', sans-serif;
-}
-
-h2, h3 {
-  font-family: 'Genos', sans-serif;
-}
-
-.shadow-glow {
-  box-shadow: 0 0 8px rgba(231, 66, 126, 0.7), 
-              0 0 12px rgba(8, 196, 214, 0.5);
-}
-
-/* Efecto de transición suave para los enlaces */
-nav a {
-  transition: all 0.3s ease;
-}
-
-/* Efecto hover sutil */
-nav a:hover {
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-}
-
-/* Ocultar scrollbar */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* Animación scroll horizontal */
-@keyframes scroll-horizontal {
-  0% {
-    transform: translateX(0%);
+  .logo {
+    height: 18px;
   }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
-.animate-scroll-horizontal {
-  animation: scroll-horizontal 25s linear infinite;
-}
+  a {
+    color: var(--text-h);
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg);
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
 
-/* Clases safelist para gradientes dinámicos */
-@layer utilities {
-  .bg-gradient-from-dark {
-    --tw-gradient-from: #1E1E1E;
-    --tw-gradient-to: rgba(42, 12, 24, 0);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
   }
-  
-  .bg-gradient-to-teal {
-    --tw-gradient-to: #08C4D6;
-  }
-  
-  .from-dark-90 {
-    --tw-gradient-from: #1E1E1EE6;
-    --tw-gradient-to: rgb(30 30 30 / 0);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
   }
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-.blink {
-  animation: blink 1s step-end infinite;
-}
-
-.typing-animation {
-  animation: typing 3s steps(20) 1s 1 normal both;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes neon-glow {
-  0%, 100% { 
-    filter: brightness(0.2);
-  }
-  50% { 
-    filter: brightness(0.4);
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
   }
 }
 
-.neon-divider {
-  animation: neon-glow 2s ease-in-out infinite;
-}
+.ticks {
+  position: relative;
+  width: 100%;
 
-@keyframes wave-move {
-  0% { left: -5%; opacity: 0; }
-  50% { opacity: 1; }
-  100% { left: 105%; opacity: 0; }
-}
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
 
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}

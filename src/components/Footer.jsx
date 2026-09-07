@@ -1,108 +1,59 @@
-import React from 'react';
-import footerLogo from '../assets/icons/Logo-20.png';
-import LanguageSelector from './LanguageSelector';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Logo from '../assets/logo.svg';
 import { useTranslation } from 'react-i18next';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+import LanguageSelector from './LanguageSelector';
 
 const Footer = () => {
-  const { t } = useTranslation();
-  const location = useLocation()
-  const navigate = useNavigate();
+    const { t } = useTranslation();
 
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+    return (
+        <footer className="relative mt-auto text-white overflow-hidden w-full">
+            {/* línea superior con glow cyan */}
+            <div className="h-px w-full bg-[var(--color-cyan)] shadow-[0_0_8px_var(--color-cyan)]" />
 
-  const handleNav = (item) => {
-    if (item.path === '/') {
-      if (location.pathname === '/') {
-        scrollToSection('home-hero');
-      } else {
-        navigate('/');
-      }
-    } else {
-      navigate(item.path);
-    }
-  };
+            <div className="bg-[var(--color-black)] px-8 py-8 w-full">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                    
+                    {/* Logo + texto decorativo */}
+                    <div className="flex items-center gap-3">
+                        <img src={Logo} alt="猫D." className="h-8" />
+                        <span className="text-[var(--color-cyan)] font-mono text-xs tracking-widest opacity-60">
+                            v2.0.26
+                        </span>
+                    </div>
 
-  return (
-    <footer className="bg-dark text-light py-4 border-t border-accent">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        {/* Layout móvil: todo centrado verticalmente */}
-        <div className="flex flex-col items-center space-y-4 md:hidden">
-          {/* Logo */}
-          <button
-            className="flex items-center group"
-            onClick={() => handleNav({ path: '/' })}
-            style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
-            aria-label="Go to home"
-          >
-            <img src={footerLogo} alt="Footer Logo" className="h-16 transition-transform group-hover:rotate-12" />
-          </button>
+                    {/* Texto central */}
+                    <p className="text-[var(--color-gray)] font-mono text-xs tracking-widest text-center">
+                        {t('footer.footer')}
+                    </p>
 
-          {/* Texto centrado */}
-          <div className="text-center">
-            <span className="text-base">{t("footer")}</span>
-          </div>
+                    {/* Links + idioma */}
+                    <div className="flex items-center gap-4">
+                        <a href="https://github.com/MaoDhell" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            className="text-[var(--color-gray)] hover:text-[var(--color-cyan)] text-xl transition-colors">
+                            <IoLogoGithub />
+                        </a>
+                        <a href="https://www.linkedin.com/in/laura-escobar-ruiz/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            className="text-[var(--color-gray)] hover:text-[var(--color-cyan)] text-xl transition-colors">
+                            <IoLogoLinkedin />
+                        </a>
+                        <LanguageSelector inline={true} />
+                    </div>
+                </div>
 
-          {/* Iconos sociales y selector de idioma juntos */}
-          <div className="flex items-center justify-center space-x-4">
-            <a href="https://github.com/MaoDhell" target="_blank" rel="noopener noreferrer" 
-               aria-label="GitHub" className="text-primary hover:text-accent text-xl transition">
-              <FaGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/laura-escobar-ruiz/" target="_blank" rel="noopener noreferrer" 
-               aria-label="LinkedIn" className="text-primary hover:text-accent text-xl transition">
-              <FaLinkedin />
-            </a>
-            <LanguageSelector inline={true} />
-          </div>
-        </div>
-
-        {/* Layout tablet y desktop: horizontal */}
-        <div className="hidden md:flex md:items-center md:justify-between">
-          {/* Logo izquierda */}
-          <div className="flex-shrink-0">
-            <button
-              className="flex items-center group"
-              onClick={() => handleNav({ path: '/' })}
-              style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
-              aria-label="Go to home"
-            >
-              <img src={footerLogo} alt="Footer Logo" className="h-20 lg:h-24 transition-transform group-hover:rotate-12" />
-            </button>
-          </div>
-
-          {/* Texto centrado */}
-          <div className="flex-grow text-center px-4">
-            <span className="text-lg">{t("footer")}</span>
-          </div>
-
-          {/* Iconos y selector de idioma a la derecha - en línea horizontal */}
-          <div className="flex items-center justify-end space-x-4 flex-shrink-0">
-            <a href="https://github.com/MaoDhell" target="_blank" rel="noopener noreferrer" 
-               aria-label="GitHub" className="text-primary hover:text-accent text-2xl transition">
-              <FaGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/laura-escobar-ruiz/" target="_blank" rel="noopener noreferrer" 
-               aria-label="LinkedIn" className="text-primary hover:text-accent text-2xl transition">
-              <FaLinkedin />
-            </a>
-            <LanguageSelector inline={true} />
-          </div>
-        </div>
-
-        {/* Copyright - siempre centrado en la parte inferior */}
-        <div className="text-center mt-4 pt-2 border-t border-accent border-opacity-30">
-          <p className="text-xs">© 2025 - Laura D Escobar Ruiz (猫D ). {t("reserved")}</p>
-        </div>
-      </div>
-    </footer>
-  );
-};
+                {/* línea inferior + copyright */}
+                <div className="max-w-6xl mx-auto mt-6 pt-4 border-t border-[var(--color-red)]/20 flex items-center justify-center gap-3">
+                    <span className="text-[var(--color-red)] font-mono text-xs opacity-40">▮</span>
+                    <p className="text-[var(--color-gray)] font-mono text-xs opacity-50">
+                        © 2026 Laura D Escobar Ruiz (猫D.) — {t('footer.reserved')}
+                    </p>
+                    <span className="text-[var(--color-red)] font-mono text-xs opacity-40">▮</span>
+                </div>
+            </div>
+        </footer>
+    )
+}
 
 export default Footer;

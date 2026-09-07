@@ -1,27 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Home from './pages/Home';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Hero from './sections/Hero'
 
-
-
-const App = () => (
-  <Router>
-    <div className="min-h-screen text-graylight font-inter relative overflow-x-hidden">
-      {/* Navbar */}
+const App = () => {
+  return (
+    <main className="min-h-screen flex flex-col">
       <Navbar />
-      {/* Main Content */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      {/* Footer */}
+      <Hero />
       <Footer />
-    </div>
-  </Router>
-);
+    </main>
+  )
+}
 
-export default App;
+export default App
