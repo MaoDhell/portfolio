@@ -2,6 +2,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useGLTF, useAnimations, OrbitControls } from '@react-three/drei'
 import { EffectComposer, N8AO, Bloom } from '@react-three/postprocessing'
 import { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import * as THREE from 'three'
 
 const Room = () => {
@@ -63,6 +64,7 @@ const CameraRig = ({ basePosition = [4, 9, 12], target = [0, 4, 0], intensity = 
 }
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative w-full h-screen">
       <Canvas shadows camera={{ position: [4, 9, 12], fov: 45 }}>
@@ -87,11 +89,11 @@ const Hero = () => {
 
       <div className="absolute inset-0 flex items-center pointer-events-none">
         <div className="pl-16 md:pl-32 lg:pl-48">
-          <h1 className="font-[Mochiy_Pop_One] text-4xl md:text-6xl text-gray drop-shadow-[0_0_15px_rgba(8,196,214,0.6)]">
-            Laura - 猫D
+          <h1 className="font-[Mochiy_Pop_One] text-6xl md:text-8xl text-gray drop-shadow-[0_0_15px_rgba(213,24,46,0.6)]">
+            {t('hero.name')}
           </h1>
-          <p className="font-[Genos] text-lg md:text-2xl text-cyan tracking-[0.3em] mt-2">
-           DEVELOPER / DESIGNER
+          <p className="font-[Genos] text-lg md:text-2xl text-[var(--color-red)] tracking-[0.4em] mt-2">
+            {t('hero.rol')}
           </p>
         </div>
       </div>

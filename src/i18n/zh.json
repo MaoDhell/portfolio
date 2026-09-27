@@ -5,8 +5,12 @@
     "projects": "项目",
     "contact": "联系"
   },
-    "footer":{
-        "reserved":"版权所有",
-        "footer": "准备好迎接下次冒险了吗？"
-    }
+  "footer":{
+    "reserved":"版权所有",
+    "footer": "准备好迎接下次冒险了吗？"
+  },
+  "hero":{
+    "name": "Laura-猫D",
+    "rol": "开发者 / 设计师"
+  }
 }

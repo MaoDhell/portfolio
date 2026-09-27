@@ -8,5 +8,9 @@
   "footer":{
     "reserved":"All rights reserved",
     "footer": "Ready for the next adventure?"
+  },
+  "hero":{
+    "name": "Laura-猫D",
+    "rol": "Developer & Designer"
   }
 }

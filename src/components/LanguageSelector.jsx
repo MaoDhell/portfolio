@@ -9,7 +9,7 @@ const LanguageSelector = ({ inline = false }) => {
     }
 
     return (
-        <div className="inline-flex items-center gap-2 pl-5 pr-2 py-2 opacity-75 bg-gradient-to-r from-[var(--color-red)] to-[var(--color-black)] text-[var(--color-gray)] border border-[var(--color-red)] rounded font-genos text-base shadow-lg focus-within:ring-2 focus-within:ring-neon">
+        <div className="inline-flex items-center gap-2 pl-2 pr-1 py-1 opacity-75 bg-gradient-to-r from-[var(--color-red)] to-[var(--color-black)] text-[var(--color-gray)] border border-[var(--color-red)] rounded font-genos text-base shadow-lg focus-within:ring-2 focus-within:ring-neon">
             <span className="text-xl flex items-center justify-center shrink-0">
                 <IoGlobeOutline />
             </span>

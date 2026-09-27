@@ -5,8 +5,12 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
-    "footer":{
-        "reserved":"Todos los derechos reservados",
-        "footer": "¿Listx para la próxima aventura?"
-    }
+  "footer":{
+      "reserved":"Todos los derechos reservados",
+      "footer": "¿Listx para la próxima aventura?"
+  },
+  "hero":{
+    "name": "Laura-猫D",
+    "rol": "Desarrolladora & Diseñadora"
+  }
 }
